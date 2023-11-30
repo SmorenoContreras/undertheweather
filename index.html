@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<input type="text" id="city" placeholder="Enter a city" class="form-control mb-3">
+				<button onclick="searchCity()" class="btn btn-primary">Search</button>
+				<h2>Search History</h2>
+				<ul id="searchHistory" class="list-group"></ul>
+			</div>
+			<div class="col-md-10">
+				<div class="card mb-3">
+				   <div class="card-body" id="currentWeather">
+				   </div>
+				</div>
+				<div class="card mb-3">
+				   <div class="card-header">
+					   <h2>5-Day Forecast</h2>
+				   </div>
+				   <div id="forecast" class="card-body"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="./script.js"></script>    
+
+</body>
+
+</html>
